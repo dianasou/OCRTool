@@ -1,0 +1,84 @@
+h1 {
+    font-family: "Julius Sans One", sans-serif;
+    color: #2b580c;
+    background-color: #afa939;
+}
+
+h3 {
+    font-style: bold;
+    color: #afa939;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    color: black;
+}
+
+input[type="submit"] {
+
+    background-color: #63aabc;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color: lightgray;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+
+input[type="reset"] {
+
+    background-color: gray;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+
+input[type="reset"]:hover {
+
+    background-color: lightgray;
+
+    color: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #eee;
+
+    text-shadow:none;
+
+}
+
+.material-icons {
+    color: #fdef96 !important;
+}

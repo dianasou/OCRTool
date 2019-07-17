@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html>  
+    <head>
+        <!--- stylesheets --->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Duru+Sans|Julius+Sans+One&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        
+        
+        <title>Online OCR Tool</title>
+    </head>
+    
+    <body>
+        <div>
+            <h1>Online OCR Tool <i class="material-icons md-48">image_search</i></h1> 
+            
+            <p>Convert the text from your images for free using OCR (Optical Character Recognition)!</p>
+        </div>
+        
+        <div>
+            <h3>Upload a Photo</h3>
+            <p>The file can be a scanned, typed, handwritten, or printed photo.</p>
+            
+            <p>Allowed file types:</p>
+            <ul>
+                <li>png</li>
+                <li>jpg</li>
+                <li>jpeg</li>
+                <li>gif</li>
+            </ul>
+            
+            <form method="post" enctype="multipart/form-data">
+                <p>
+                    <input type="file" name="file">
+                    <br>
+                    <br>
+                    <input type="submit" value="Ready!">
+                    <input type="reset" value="Clear">
+                </p>
+            </form>
+        </div>
+        
+        <div>
+            {% if result %}
+            <h3>{{ result }}</h3>
+            {% endif %}
+        
+            {% if img_src %}
+            <img src="{{ img_src }}" alt="Result of extracted text">
+            {% endif %}
+            
+            {% if extracted_text %}
+            <p><b>{{ extracted_text }}</b></p>
+            {% endif %}
+        </div>
+        
+        <div>
+            <hr>
+            <p>© 2019 Diana Southiphomma | dnsouthi@gmail.com</p>
+        </div>
+        
+     </body>
+</html> 
