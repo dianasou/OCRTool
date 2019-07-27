@@ -1,5 +1,5 @@
 # OCRTool
-This is a personal project that I decided to try that implements an OCR tool on a web page.
+This is a personal project that implements an OCR tool on a web page.
 Credit for the implementation of OCR using Python, Flask, and HTML goes to this source:
 https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
 - although some of my code is different, the website I used deserves credit for help with my solution
